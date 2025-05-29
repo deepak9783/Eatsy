@@ -1,0 +1,25 @@
+
+  {
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "outDir": "./dist",
+      "rootDir": "./",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "moduleResolution": "node", // Better compatibility with Node.js
+      "resolveJsonModule": true, // Allows importing JSON files
+      "allowSyntheticDefaultImports": true, // For compatibility with some packages
+      "forceConsistentCasingInFileNames": true, // Prevents issues on case-sensitive file systems
+      "noImplicitAny": true, // Catch implicit `any` types
+      "strictNullChecks": true, // Catch potential null or undefined issues
+      "noUnusedLocals": false, // Warns about unused variables
+      "noUnusedParameters": true, // Warns about unused function parameters
+      "noImplicitReturns": true, // Warns if a function doesn't explicitly return
+      "noFallthroughCasesInSwitch": true // Prevents unintentional fallthrough in switch cases
+    },
+    "include": ["./**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
