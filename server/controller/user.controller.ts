@@ -201,10 +201,9 @@ export const resetPassword = async (req: Request, res: Response) => {
 
 
 export const checkAuth = async (req: Request, res: Response): Promise<void> => {
-  try { console.log("backend")
-    const userId = req.id; // Extracted from the token by the middleware
+  try { 
+    const userId = req.id; 
     const user = await User.findById(userId).select("-password");
-    console.log("hi")
     if (!user) {
       res.status(404).json({
         success: false,

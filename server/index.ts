@@ -16,6 +16,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+
 const DIRNAME = path.resolve();
 
 // default middleware for any mern project
@@ -44,3 +45,4 @@ app.listen(PORT, () => {
     connectDB();
     console.log(`Server listen at port ${PORT}`);
 });
+
